@@ -1,38 +1,260 @@
 .App {
-  text-align: center;
+    /* text-align: center; */
+}
+
+.text-align-centre {
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.m-t-10 {
+    margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.m-t-0 {
+    margin-top: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.pointer {
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.p-10 {
+    padding: 10px;
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+
+.m-r-10 {
+    margin-right: 10px;
+}
+
+.m-t-5 {
+    margin-top: 5px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.header {
+    height: 40px;
+    text-align: center;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.color-blue {
+    border: 2px solid #3054D6
+}
+
+.car-header {
+    background-color: #202942;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.car-details {
+    border-radius: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+.m-b-0 {
+    margin-bottom: 0px !important;
+}
+
+.posted-color {
+    color: #8492A6;
+}
+
+ul .spec-1 {
+    list-style-image: url('assets/icons/spec1.svg');
+}
+
+ul .spec-2 {
+    list-style-image: url('assets/icons/spec2.svg');
+}
+
+ul .spec-3 {
+    list-style-image: url('assets/icons/spec3.svg');
+}
+
+.spec-list {
+    color: #0A2239;
+}
+
+li {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+.additional-text {
+    color: #0A2239;
+    padding: 10px;
+    margin: 0px;
+}
+
+.hide-div {
+    background-color: #2355FC0F;
+    color: #194DFF;
+    text-align: center;
+}
+
+.m-b-3 {
+    margin-bottom: 3px;
+}
+
+.profile-div {
+    color: #0A2239;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.user-name {
+    display: grid;
+}
+
+.bid-details {
+    border: 1px solid #0A22391F;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.number-input:focus {
+    outline: none;
+}
+
+.number-input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+}
+
+.input-div {
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.display-flex {
+    display: flex !important;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.bid-button {
+    border-radius: 50px;
+    padding: 10px;
+    color: #0A2239;
+    background-color: ipx solid #F6F9FB80;
+}
+
+.bid-button:focus {
+    border: 1px solid #3054D6;
+    background-color: #3054D60F;
+    outline: none;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.input-mobile {
+    height: 40px;
+    width: 100%;
+    color: #0A2239;
+    padding-left: 10px;
+    /* border: 1px solid #E7EBEEB3; */
+}
+
+.input-mobile:focus {
+    outline: #3054D6 auto 1px;
+}
+
+.p-floating-container {
+    position: relative;
+}
+
+.p-floating-container label {
+    /* Position the label */
+    left: 8px;
+    position: absolute;
+    top: 0;
+    /* Hide it by default */
+    opacity: 0;
+    color: #3054D6;
+    transition: 'all 200ms',
+}
+
+
+/* Show the label at desired position when the placeholder of input isn't shown */
+
+.p-floating-container input:not(:placeholder-shown)+label {
+    background: #FFF;
+    transform: translate(0, -50%);
+    opacity: 1;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 40px;
+    background-color: #EDF0F7;
+    color: #2355FC;
 }
