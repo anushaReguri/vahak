@@ -5,9 +5,6 @@ import carLogo from '../assets/icons/carLogo.png'
 
 function Header(props) {
 const pathname = window.location.href
-useEffect(() => {
-    console.log('}}}}}}}}}}');
-    }, [props])
   return (
     <div className='p-10 card header'>
       <img
