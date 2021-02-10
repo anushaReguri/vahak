@@ -1,5 +1,5 @@
 .App {
-    /* text-align: center; */
+    font-family: Nunito;
 }
 
 .text-align-centre {
@@ -152,6 +152,7 @@ ul {
     border: 1px solid #0A22391F;
     border-radius: 10px;
     padding: 20px;
+    padding-bottom: 0px;
 }
 
 .number-input:focus {
@@ -163,14 +164,24 @@ ul {
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: hidden;
+    width: 80%;
+}
+
+.height-50 {
+    height: 50px;
 }
 
 .input-div {
-    display: flex;
     width: 100%;
     font-size: 20px;
     text-align: center;
     padding: 20px;
+}
+
+.input-amount-div {
+    width: 60%;
+    display: flex;
+    margin: auto;
 }
 
 .display-flex {
@@ -192,12 +203,15 @@ ul {
     padding: 10px;
     color: #0A2239;
     background-color: ipx solid #F6F9FB80;
+    border: 1px solid #E7EBEE;
 }
 
-.bid-button:focus {
+.bid-button:focus,
+.bid-button-active {
     border: 1px solid #3054D6;
     background-color: #3054D60F;
     outline: none;
+    color: #3054D6;
 }
 
 .m-b-10 {
@@ -212,6 +226,14 @@ ul {
     font-size: 12px;
 }
 
+.p-b-10 {
+    padding-bottom: 10px;
+}
+
+.p-b-0 {
+    padding-bottom: 0px;
+}
+
 .margin-auto {
     margin: auto;
 }
@@ -220,8 +242,7 @@ ul {
     height: 40px;
     width: 100%;
     color: #0A2239;
-    padding-left: 10px;
-    /* border: 1px solid #E7EBEEB3; */
+    border: 1px solid #E7EBEEB3;
 }
 
 .input-mobile:focus {
@@ -230,6 +251,8 @@ ul {
 
 .p-floating-container {
     position: relative;
+    padding: 5px;
+    padding-bottom: 20px;
 }
 
 .p-floating-container label {
@@ -243,6 +266,19 @@ ul {
     transition: 'all 200ms',
 }
 
+.p-floating-container b {
+    left: 10px;
+    position: absolute;
+    font-size: 14px;
+    top: 20px;
+    width: 5%;
+}
+
+.mobile-number {
+    padding-left: 40px;
+    width: 86%;
+}
+
 
 /* Show the label at desired position when the placeholder of input isn't shown */
 
@@ -254,7 +290,16 @@ ul {
 
 .submit-btn {
     width: 100%;
-    height: 40px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #2355FC;
+    color: #FFFFFF;
+    border: 1px solid #EDF0F7;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.submit-btn:disabled {
     background-color: #EDF0F7;
     color: #2355FC;
 }
