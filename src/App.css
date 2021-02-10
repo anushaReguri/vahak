@@ -62,6 +62,14 @@
     width: 20%;
 }
 
+.w-50 {
+    width: 50%;
+}
+
+.display-grid {
+    display: grid;
+}
+
 .color-blue {
     border: 2px solid #3054D6
 }
@@ -71,6 +79,12 @@
     color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.car-list-item {
+    background-color: #202942;
+    color: white;
+    border-radius: 10px;
 }
 
 .car-details {
